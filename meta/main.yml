@@ -1,0 +1,26 @@
+---
+dependencies:
+- role: troykinsella.archive
+  archive_file_name: "{{ terraform_archive_file_name }}"
+  archive_url: "{{ terraform_archive_base_url }}{{ archive_file_name }}"
+  archive_checksum: "{{ terraform_archive_checksum }}"
+  archive_checksum_algorithm: "{{ terraform_archive_checksum_algorithm }}"
+  archive_cache_path: "{{ terraform_archive_cache_path }}"
+  archive_destination_path: "{{ terraform_archive_destination_path }}"
+  archive_extracted_file_name: "{{ terraform_archive_extracted_file_name }}"
+  archive_destination_file_name: "{{ terraform_archive_destination_file_name }}"
+  archive_destination_link_name: "{{ terraform_archive_destination_link_name }}"
+
+galaxy_info:
+  author: Troy Kinsella
+  description: Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently.
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+  galaxy_tags:
+    - packaging
+    - terraform
+  github_branch: master

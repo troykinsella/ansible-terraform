@@ -1,0 +1,13 @@
+---
+terraform_version: 0.8.4
+terraform_archive_os: linux
+terraform_archive_architecture: amd64
+terraform_archive_file_name: terraform_{{terraform_version}}_{{terraform_archive_os}}_{{terraform_archive_architecture}}.zip
+terraform_archive_base_url: https://releases.hashicorp.com/terraform/{{terraform_version}}/
+terraform_archive_checksum: 297d35d0b4311445cd87ef032d3dec917bcc7a8b163ead28a4c45d966a2f75cc
+terraform_archive_checksum_algorithm: sha256
+terraform_archive_cache_path: /usr/local/pkg
+terraform_archive_destination_path: /usr/local/bin
+terraform_archive_extracted_file_name: terraform
+terraform_archive_destination_file_name: terraform{{ terraform_version }}
+terraform_archive_destination_link_name: terraform
